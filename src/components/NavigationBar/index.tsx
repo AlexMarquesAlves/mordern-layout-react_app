@@ -34,6 +34,13 @@ export function NavigationBar() {
                                 <img src={""} alt="" />
                             </a>
                         </div>
+
+                        <button
+                            className="vvd"
+                            onClick={() => console.log(`Connect`)}
+                        >
+                            <span>Let's Connect</span>
+                        </button>
                     </span>
                 </Navbar.Collapse>
             </Container>
