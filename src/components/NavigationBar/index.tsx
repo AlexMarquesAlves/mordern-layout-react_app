@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 interface NavigationBarProps {
@@ -6,6 +6,8 @@ interface NavigationBarProps {
 }
 
 export function NavigationBar() {
+    const [activeLink, setActiveLink] = useState(`home`);
+
     return (
         <Navbar expand="lg">
             <Container>
