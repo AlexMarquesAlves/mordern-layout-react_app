@@ -1,17 +1,17 @@
 import { ReactNode, SetStateAction, useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
-import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import logo from "../../assets/img/logo.svg";
+import navIcon1 from "../../assets/img/nav-icon1.svg";
+import navIcon2 from "../../assets/img/nav-icon2.svg";
+import navIcon3 from "../../assets/img/nav-icon3.svg";
 
 interface NavigationBarProps {
     children?: ReactNode;
 }
 
 export function NavigationBar() {
-    const [activeLink, setActiveLink] = useState(`home`);
+    const [activeLink, setActiveLink] = useState("home");
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -23,9 +23,9 @@ export function NavigationBar() {
             }
         };
 
-        window.addEventListener(`scroll`, onScroll);
+        window.addEventListener("scroll", onScroll);
 
-        return () => window.removeEventListener(`scroll`, onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
     const onUpdateActiveLink = (value: SetStateAction<string>) => {
@@ -33,19 +33,16 @@ export function NavigationBar() {
     };
 
     return (
-        <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+        <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
             <Container>
-                <Navbar.Brand href="#home">
-                    <img src={logo} alt="Logo image" />
+                <Navbar.Brand href="/">
+                    <img src={logo} alt="Logo" />
                 </Navbar.Brand>
-
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
-
                 <Navbar.Collapse id="basic-navbar-nav">
-                    {/* links list */}
-                    <Nav className="me-auto">
+                    <Nav className="ms-auto">
                         <Nav.Link
                             href="#home"
                             className={
@@ -80,9 +77,7 @@ export function NavigationBar() {
                             Projects
                         </Nav.Link>
                     </Nav>
-
                     <span className="navbar-text">
-                        {/* social list */}
                         <div className="social-icon">
                             <a href="#">
                                 <img src={navIcon1} alt="" />
@@ -94,12 +89,11 @@ export function NavigationBar() {
                                 <img src={navIcon3} alt="" />
                             </a>
                         </div>
-
                         <button
                             className="vvd"
-                            onClick={() => console.log(`Connect`)}
+                            onClick={() => console.log("connect")}
                         >
-                            <span>Let's Connect</span>
+                            <span>Let’s Connect</span>
                         </button>
                     </span>
                 </Navbar.Collapse>
