@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, SetStateAction, useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 interface NavigationBarProps {
@@ -23,6 +23,10 @@ export function NavigationBar() {
         return () => window.removeEventListener(`scroll`, onScroll);
     }, []);
 
+    const onUpdateActiveLink = (value: SetStateAction<string>) => {
+        setActiveLink(value);
+    };
+
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
@@ -44,6 +48,7 @@ export function NavigationBar() {
                                     ? "active navbar-link"
                                     : "navbar-link"
                             }
+                            onClick={() => onUpdateActiveLink("home")}
                         >
                             Home
                         </Nav.Link>
@@ -54,6 +59,7 @@ export function NavigationBar() {
                                     ? "active navbar-link"
                                     : "navbar-link"
                             }
+                            onClick={() => onUpdateActiveLink("skills")}
                         >
                             Skills
                         </Nav.Link>
@@ -64,6 +70,7 @@ export function NavigationBar() {
                                     ? "active navbar-link"
                                     : "navbar-link"
                             }
+                            onClick={() => onUpdateActiveLink("projects")}
                         >
                             Projects
                         </Nav.Link>
