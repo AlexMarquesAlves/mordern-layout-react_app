@@ -7,6 +7,7 @@ interface NavigationBarProps {
 
 export function NavigationBar() {
     const [activeLink, setActiveLink] = useState(`home`);
+    const [scrolled, setScrolled] = useState(false);
 
     return (
         <Navbar expand="lg">
