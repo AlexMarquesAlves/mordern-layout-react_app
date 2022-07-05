@@ -24,6 +24,17 @@ export function NavigationBar() {
                         <Nav.Link href="#skills">Skills</Nav.Link>
                         <Nav.Link href="#projects">Projects</Nav.Link>
                     </Nav>
+
+                    <span className="navbar-text">
+                        {/* social list */}
+                        <div className="social-icon">
+                            <a href="#">
+                                <img src={""} alt="" />
+                                <img src={""} alt="" />
+                                <img src={""} alt="" />
+                            </a>
+                        </div>
+                    </span>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
