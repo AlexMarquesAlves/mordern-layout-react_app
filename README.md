@@ -9,19 +9,19 @@
 <h1 align="center">Mordern Layout React App</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/AlexMarquesAlves/central-links?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/AlexMarquesAlves/mordern-layout-react_app?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/AlexMarquesAlves/central-links?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/AlexMarquesAlves/mordern-layout-react_app?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/AlexMarquesAlves/central-links?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/AlexMarquesAlves/mordern-layout-react_app?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/AlexMarquesAlves/central-links?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/AlexMarquesAlves/mordern-layout-react_app?color=56BEB8">
 
-  <img alt="Github issues" src="https://img.shields.io/github/issues/AlexMarquesAlves/central-links?color=56BEB8" />
+  <img alt="Github issues" src="https://img.shields.io/github/issues/AlexMarquesAlves/mordern-layout-react_app?color=56BEB8" />
 
-  <img alt="Github forks" src="https://img.shields.io/github/forks/AlexMarquesAlves/central-links?color=56BEB8" />
+  <img alt="Github forks" src="https://img.shields.io/github/forks/AlexMarquesAlves/mordern-layout-react_app?color=56BEB8" />
 
-  <img alt="Github stars" src="https://img.shields.io/github/stars/AlexMarquesAlves/central-links?color=56BEB8" />
+  <img alt="Github stars" src="https://img.shields.io/github/stars/AlexMarquesAlves/mordern-layout-react_app?color=56BEB8" />
 </p>
 
 Status
